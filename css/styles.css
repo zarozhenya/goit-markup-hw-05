@@ -20,6 +20,8 @@
   --overlay-bg-first-color: rgba(47, 48, 58, 0.8);
   --overlay-bg-second-color: rgba(33, 150, 243, 0.9);
   --overlay-text-color: #ffffff;
+  --animation-time: 250ms;
+  --animation-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -124,6 +126,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--nav-text-color);
+  transition: color var(--animation-time) var(--animation-cubic);
 }
 .current {
   color: var(--accent-color);
@@ -160,6 +163,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--contacts-text-color);
+  transition: color var(--animation-time) var(--animation-cubic);
 }
 .contacts-icon {
   margin-right: 10px;
@@ -336,6 +340,8 @@ ul {
   height: 44px;
   border-radius: 50%;
   fill: var(--icon-first-color);
+  transition: background-color var(--animation-time) var(--animation-cubic),
+    fill var(--animation-time) var(--animation-cubic);
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
@@ -364,6 +370,8 @@ ul {
   border: 1px solid var(--icon-first-color);
   border-radius: 4px;
   fill: var(--icon-first-color);
+  transition: border-color var(--animation-time) var(--animation-cubic),
+    fill var(--animation-time) var(--animation-cubic);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -395,6 +403,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--address-text-color);
+  transition: color var(--animation-time) var(--animation-cubic);
 }
 .address-link.city {
   color: var(--secondary-text-color);
@@ -430,6 +439,7 @@ ul {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--icon-second-color);
+  transition: background-color var(--animation-time) var(--animation-cubic);
 }
 .join-link:hover,
 .join-link:focus {
