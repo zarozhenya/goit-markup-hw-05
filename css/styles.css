@@ -340,14 +340,17 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--icon-first-color);
+  color: var(--icon-first-color);
   transition: background-color var(--animation-time) var(--animation-cubic),
-    fill var(--animation-time) var(--animation-cubic);
+    color var(--animation-time) var(--animation-cubic);
+}
+.team-icon {
+  fill: currentColor;
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
-  fill: var(--icon-second-color);
+  color: var(--icon-second-color);
 }
 /* Clients */
 .clients-title {
@@ -370,14 +373,17 @@ ul {
   height: 92px;
   border: 1px solid var(--icon-first-color);
   border-radius: 4px;
-  fill: var(--icon-first-color);
+  color: var(--icon-first-color);
   transition: border-color var(--animation-time) var(--animation-cubic),
-    fill var(--animation-time) var(--animation-cubic);
+    color var(--animation-time) var(--animation-cubic);
+}
+.clients-icon {
+  fill: currentColor;
 }
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 /* Footer */
 .footer {
